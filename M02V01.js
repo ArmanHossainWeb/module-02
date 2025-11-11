@@ -3,4 +3,5 @@ const obj = {
     "programming Hero": {courseId: "level1"}
 }
 
-console.log(obj["programming Hero"])
+console.log(obj["programming Hero"]);
+

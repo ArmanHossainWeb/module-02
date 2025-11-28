@@ -101,12 +101,12 @@ const products = [
 
 // output
 
-const topElectronicProducts = products
-  .filter((item) => item.category === "Electronics")
-  .sort((a, b) => a.price - b.price)
-  .slice(0, 3)
-  .map((item) => {
-    return { name: item.productName };
-  });
-console.log(topElectronicProducts);
+// const topElectronicProducts = products
+//   .filter((item) => item.category === "Electronics")
+//   .sort((a, b) => a.price - b.price)
+//   .slice(0, 3)
+//   .map((item) => {
+//     return { name: item.productName };
+//   });
+// console.log(topElectronicProducts);
 

@@ -9,3 +9,25 @@ const products = [
 const subTotal = products.reduce((subTotal, item) => {
     return subTotal + (item.price * item.quantity);
 }, 0);
+
+
+
+
+
+
+
+
+
+const players = [
+  { name: "Jamal Bhuyan", score: 88 },
+  { name: "Shekh Morsalin", score: 81 },
+  { name: "Rakib Hossain", score: 95 },
+  { name: "Topu Barman", score: 72 },
+];
+
+players.reduce((acc, player) => {
+  if (player.score > acc.score) {
+    return player;
+  }
+  return acc;
+}, players[0]);

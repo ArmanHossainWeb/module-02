@@ -12,21 +12,20 @@ const postsArray = [
 const lookupTable = postsArray.reduce((table, post) => {
   table[post.id] = post;
   return table;
-},{})
+},{});
 
 
 // console.log(lookupTable)
 
-const post = lookupTable["p-103"]
-// console.log(post)
 
 
-const grade = {
-  A:"excelenct",
-  B:"good",
-  C:"Avarage",
-  D:"poor",
-  E:"bad"
-}
 
-console.log(grade["B"])
+// problem 1 
+const usersList = [
+  { username: "arman101", age: 22, role: "admin" },
+  { username: "sara_dev", age: 25, role: "editor" },
+  { username: "hossainX", age: 30, role: "viewer" }
+];
+
+
+const tableLookup = usersList.reduce((table));

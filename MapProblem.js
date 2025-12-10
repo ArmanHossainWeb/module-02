@@ -32,5 +32,7 @@ const myMap = new Map([
 ]);
 
 
-const array = [...myMap]
+const array = [...myMap];
 console.log(array)
+
+

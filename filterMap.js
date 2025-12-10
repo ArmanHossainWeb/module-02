@@ -16,3 +16,10 @@ for (const [name, marks] of students) {
 }
 
 console.log(filtered)
+
+
+
+// Map {
+//   'arman' => 85,
+//   'tania' => 92
+// }

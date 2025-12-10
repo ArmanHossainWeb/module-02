@@ -1,31 +1,54 @@
+const studentName = new Map([
+    ["name1", "Arman"],
+    ["name2", "Riyad"]
+]);
 
 
-const myMap = new Map();
-
-myMap.set("name", "arman") // name is key and arman is value 
-myMap.set("age", 20)
-
-console.log(myMap.get("name")); // this is get operation 
-console.log(myMap.get("age"));
-
-console.log(myMap.has("name"))
-console.log(myMap.has("arman"))
-console.log(myMap.has("age")) // true age is value !
-console.log(myMap.has(12))  // false because 12 is value not key !
+// map.set 
+studentName.set("name3", "arman");
+studentName.set("name4", "Hossain");
+console.log(studentName);
 
 
-console.log(myMap.size) //2
+// map.size 
+console.log(studentName.size)
+
+// convert map to array 
+const array = [...studentName];
+console.log(array)
+
+// map.get 
+
+const getStudent1 = studentName.get("name3");
+console.log(getStudent1);
+
+const getStudent2 = studentName.get("name4");
+console.log(getStudent2);
 
 
-myMap.delete("name")
-console.log(myMap) // Map(1) {"age" => 20}
+
+// map.has 
+const hasMethod1 = studentName.has("name2");
+console.log(hasMethod1)
+
+const hasMethod2 =studentName.has("name4");
+console.log(hasMethod2);
+
+const hasMethod3 =studentName.has("name5");
+console.log(hasMethod3);
 
 
-myMap.clear();
-console.log(myMap.size) // output 0 
+// map.delete 
+
+const delete1 = studentName.delete("name4");
+console.log(delete1)
+console.log(studentName);
 
 
-console.log([...myMap.keys()])  
+// map.clear 
+const clear1 = studentName.clear()
+console.log(clear1)
+console.log(studentName);
 
 
-console.log(...myMap.entries()) // [ 'name', 'arman' ] [ 'age', 20 ]
+

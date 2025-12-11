@@ -1,4 +1,4 @@
-const products = [
+const phoneItem = [
   { id: "p-001", name: "Laptop", price: 1200, quantity: 5 },
   { id: "p-002", name: "Smartphone", price: 800, quantity: 10 },
   { id: "p-003", name: "Headphones", price: 150, quantity: 20 },
@@ -6,13 +6,14 @@ const products = [
   { id: "p-005", name: "Mouse", price: 40, quantity: 25 },
 ];
 
-const subTotal = products.reduce((subTotal, item) => {
-    return subTotal + (item.price * item.quantity);
-}, 0);
+
+const subTotal = phoneItem.reduce((subTotal, product) => {
+  // console.log(subTotal, product)
+ return subTotal + product.price * product.quantity;
+}, 0)
 
 
-
-
+// console.log(subTotal)
 
 
 
@@ -25,9 +26,12 @@ const players = [
   { name: "Topu Barman", score: 72 },
 ];
 
-players.reduce((acc, player) => {
-  if (player.score > acc.score) {
-    return player;
+const bestScore = players.reduce((bestPlayer, player) => {
+  console.log(bestPlayer, player)
+  if(bestPlayer.score > player.score){
+    return bestPlayer
   }
-  return acc;
-}, players[0]);
+  return player;
+}, players[0])
+
+console.log(bestScore)
